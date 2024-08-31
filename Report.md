@@ -29,8 +29,8 @@
 68% проверок завершились успешно  
 31% проверок завершились ошибкой  
 
-Отчет [gradle](reports%2Ftests%2Ftest%2Findex.html) 
-![img.png](reports%2Ftests%2Ftest%2Fimg.png)
+Отчет [gradle](reports%2Ftests%2Ftest%2Findex.html)  
+![img.png](reports%2Ftests%2Ftest%2Fimg.png)  
 Отчет [allure](reports%2Fallure-report%2FallureReport%2Findex.html)  
 ![img.png](reports%2Fallure-report%2FallureReport%2Fimg.png)  
 ![img_1.png](reports%2Fallure-report%2FallureReport%2Fimg_1.png)  
