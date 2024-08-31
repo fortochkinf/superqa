@@ -17,15 +17,38 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("io.qameta.allure:allure-bom:2.25.0"))
-    testImplementation("io.qameta.allure:allure-junit5")
+    testImplementation(platform('io.qameta.allure:allure-bom:2.25.0'))
+    testImplementation 'io.qameta.allure:allure-junit5'
+    testImplementation 'io.qameta.allure:allure-selenide'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
     testImplementation 'com.codeborne:selenide:7.4.2'
+
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.4'
 }
 
+// Define the version of AspectJ
+def aspectJVersion = '1.9.21'
 
+// Define configuration for AspectJ agent
+configurations {
+    agent {
+        canBeResolved = true
+        canBeConsumed = true
+    }
+}
+
+dependencies {
+    // Add aspectjweaver dependency
+    agent "org.aspectj:aspectjweaver:$aspectJVersion"
+}
+
+// Configure javaagent for test execution
+test {
+    jvmArgs = [ "-javaagent:${configurations.agent.singleFile}" ]
+}
+
+reporting.baseDir = "reports"
 
 test {
     reports {

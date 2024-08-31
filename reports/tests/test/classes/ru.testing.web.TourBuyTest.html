@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TourBuyTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TourBuyTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.testing.web.html">ru.testing.web</a> &gt; TourBuyTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">16</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">5</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">43.991s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">68%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="cvvFieldIsEmptyTest()"></a>
+<h3 class="failures">Тест кейс 11: Поле &quot;CVV&quot; пустое</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;null&gt; but was: &lt;Поле обязательно для заполнения&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
+	at app//org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
+	at app//org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:30)
+	at app//org.junit.jupiter.api.Assertions.assertNull(Assertions.java:279)
+	at app//ru.testing.web.TourBuyTest.cvvFieldIsEmptyTest(TourBuyTest.java:207)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="cyrillicOwnerNameTest()"></a>
+<h3 class="failures">Тест кейс 12: Поле &quot;Владелец&quot; на кирилице</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;Неверный формат&gt; but was: &lt;null&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//ru.testing.web.TourBuyTest.cyrillicOwnerNameTest(TourBuyTest.java:227)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="month00ValueTest()"></a>
+<h3 class="failures">Тест кейс 13: Поле &quot;Месяц&quot; = 00</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;Неверный формат&gt; but was: &lt;null&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//ru.testing.web.TourBuyTest.month00ValueTest(TourBuyTest.java:244)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="paymentDeclinedWithCardTest()"></a>
+<h3 class="failures">Тест кейс 2: Отказ в оплате при покупке тура с оплатой по карте</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at app//org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at app//ru.testing.web.TourBuyTest.paymentDeclinedWithCardTest(TourBuyTest.java:66)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="paymentDeclinedWithCreditByCardTest()"></a>
+<h3 class="failures">Тест кейс 4: Отказ в оплате при покупке тура в кредит</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at app//org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at app//ru.testing.web.TourBuyTest.paymentDeclinedWithCreditByCardTest(TourBuyTest.java:96)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Тест кейс 6: Валидация срока действия карты</td>
+<td class="success">cardExpirationCheckTest()</td>
+<td class="success">0.811s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 16: Срок действия карты истек в этом году</td>
+<td class="success">cardIsExpiredInCurrentYearTest()</td>
+<td class="success">0.780s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 7: Поле &quot;Номер карты&quot; пустое</td>
+<td class="success">cardNumberFieldIsEmptyTest()</td>
+<td class="success">0.615s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 15: Поле &quot;Номер карты&quot; менее 16 цифр</td>
+<td class="success">cardNumberLengthBelow16Test()</td>
+<td class="success">0.683s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Тест кейс 11: Поле &quot;CVV&quot; пустое</td>
+<td class="failures">cvvFieldIsEmptyTest()</td>
+<td class="failures">0.837s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Тест кейс 12: Поле &quot;Владелец&quot; на кирилице</td>
+<td class="failures">cyrillicOwnerNameTest()</td>
+<td class="failures">0.667s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 5: Валидация полей ввода данных карты</td>
+<td class="success">fieldValidationShowErrorOnEmptyFieldsTest()</td>
+<td class="success">0.458s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Тест кейс 13: Поле &quot;Месяц&quot; = 00</td>
+<td class="failures">month00ValueTest()</td>
+<td class="failures">0.853s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 14: Поле &quot;Месяц&quot; = 13</td>
+<td class="success">month13ValueTest()</td>
+<td class="success">0.845s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 9: Поле &quot;Месяц&quot; пустое</td>
+<td class="success">monthFieldIsEmptyTest()</td>
+<td class="success">0.578s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 10: Поле &quot;Владелец&quot; пустое</td>
+<td class="success">ownerFieldIsEmptyTest()</td>
+<td class="success">1.875s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Тест кейс 2: Отказ в оплате при покупке тура с оплатой по карте</td>
+<td class="failures">paymentDeclinedWithCardTest()</td>
+<td class="failures">9.192s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Тест кейс 4: Отказ в оплате при покупке тура в кредит</td>
+<td class="failures">paymentDeclinedWithCreditByCardTest()</td>
+<td class="failures">4.372s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 1: Успешная покупка тура с оплатой по карте</td>
+<td class="success">paymentSuccessWithCardTest()</td>
+<td class="success">10.581s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 3: Успешная покупка тура в кредит</td>
+<td class="success">paymentSuccessWithCreditByCardTest()</td>
+<td class="success">10.138s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Тест кейс 8: Поле &quot;Год&quot; пустое</td>
+<td class="success">yearFieldIsEmptyTest()</td>
+<td class="success">0.706s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>авг. 31, 2024 1:21:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at 31 авг. 2024 г., 13:22:26</p>
+</div>
+</div>
+</body>
+</html>

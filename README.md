@@ -6,5 +6,5 @@
 5. Сгенерировать отчет Allure - нажать в idea на панели gradle verification -> allureReport или выполнить в терминале команду ./gradlew allureReport
 
 Сгенерированные отчеты должны находиться в файлах:
-* gradle - build/reports/tests/test/index.html
-* allure - build/reports/allure-report/index.html
+* gradle - reports/tests/test/index.html
+* allure - reports/allure-report/index.html
