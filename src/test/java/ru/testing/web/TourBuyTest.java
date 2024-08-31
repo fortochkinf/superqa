@@ -28,15 +28,6 @@ class TourBuyTest {
     private static final String APPROVED_CARD_NUMBER = "4444 4444 4444 4441";
     private static final String DECLINED_CARD_NUMBER = "4444 4444 4444 4442";
 
-
-    @BeforeAll
-    static void setupAllureReports() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
-                .screenshots(true)
-                .savePageSource(false)
-        );
-    }
-
     @BeforeEach
     void prepare(){
         DatabaseUtils.query("DELETE FROM credit_request_entity");
