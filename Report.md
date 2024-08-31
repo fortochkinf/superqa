@@ -25,9 +25,9 @@
 Тест кейс 4: Отказ в оплате при покупке тура в кредит  
 ### Итог
 
-Выполнено 16 проверок, из них 5 ошибок
-68% проверок завершились успешно
-31% проверок завершились ошибкой
+Выполнено 16 проверок, из них 5 ошибок  
+68% проверок завершились успешно  
+31% проверок завершились ошибкой  
 
-Отчет [gradle](reports%2Ftests%2Ftest%2Findex.html)
-Отчет [allure](reports%2Fallure-report%2FallureReport%2Findex.html)
+Отчет [gradle](reports%2Ftests%2Ftest%2Findex.html)  
+Отчет [allure](reports%2Fallure-report%2FallureReport%2Findex.html)  
